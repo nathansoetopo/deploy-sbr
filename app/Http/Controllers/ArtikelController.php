@@ -42,9 +42,6 @@ class ArtikelController extends Controller
         $validated = $request->validate(
             [
                 'judul' => 'required',
-                // 'tipe_motor' => 'required',
-                // 'produksi' => 'required',
-                // 'harga' => 'required',
                 'description' => 'required',
                 'gambar' => 'required|mimes:jpg,jpeg,png',
             ]
@@ -69,7 +66,7 @@ class ArtikelController extends Controller
         ]);
 
 
-        return redirect()->route('index.artikel')->with('success', 'Artikel Sukses Ditambahkan');
+        return redirect('admin/artikel')->with('success', 'Artikel Sukses Ditambahkan');
     }
 
     /**

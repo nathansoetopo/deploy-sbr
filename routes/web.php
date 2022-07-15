@@ -138,6 +138,13 @@ Route::middleware('auth')->group(function () {
         Route::get('admin/dealer/edit/{id}', [DealerController::class, 'edit']);
         Route::post('admin/dealer/update/{id}', [DealerController::class, 'update']);
         Route::get('admin/dealer/delete/{id}', [DealerController::class, 'destroy']);
+
+        Route::get('admin/artikel', [ArtikelController::class, 'index']);
+        Route::get('admin/artikel/add', [ArtikelController::class, 'create']);
+        Route::post('admin/artikel/add', [ArtikelController::class, 'store']);
+        Route::get('admin/artikel/edit/{id}', [ArtikelController::class, 'edit']);
+        Route::post('admin/artikel/update/{id}', [ArtikelController::class, 'update']);
+        Route::get('admin/artikel/delete/{id}', [ArtikelController::class, 'destroy']);
     });
 });
 
