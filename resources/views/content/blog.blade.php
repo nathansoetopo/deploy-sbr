@@ -987,8 +987,7 @@
                             <div class="down-content">
                                 <h4><a href="{{ url('artikel/'.$a->slug.'') }}">{{$a->judul}}</a></h4>
 
-                                <p style="margin: 0;"><b> {{$a->author}} &nbsp;&nbsp;|&nbsp;&nbsp; {{$a->created_at}}
-                                        &nbsp;&nbsp;|&nbsp;&nbsp; {{$a->id}} </b></p>
+                                <p style="margin: 0;"><b> {{$a->author}} &nbsp;&nbsp;|&nbsp;&nbsp; {{$a->created_at}}</b></p>
                                 </br>
                                 <p>{!! $a->description !!}</p>
                             </div>
